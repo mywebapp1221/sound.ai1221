@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>SOUND.AI1221</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background: #0f0f14;
+      color: #eaeaf0;
+      padding: 40px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    textarea {
+      width: 100%;
+      height: 260px;
+      background: #1c1c24;
+      color: #eaeaf0;
+      border: 1px solid #333;
+      padding: 12px;
+      font-family: monospace;
+      font-size: 14px;
+    }
+    button {
+      margin-top: 16px;
+      padding: 12px 20px;
+      background: #6a5cff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+    .log {
+      margin-top: 20px;
+      background: #1c1c24;
+      padding: 12px;
+      border-radius: 6px;
+      white-space: pre-wrap;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>🎧 SOUND.AI1221</h1>
+  <p>
+    ChatGPTが生成した「歌モノ用インスト（オケ）」の<br>
+    <b>Pythonコードをここに貼る</b>
+  </p>
+
+  <textarea id="code">
+# ここに ChatGPT が出した Python コードを貼る
+# generate(output_path) を含むコード
+  </textarea>
+
+  <button onclick="runMock()">▶ インスト生成（仮）</button>
+
+  <div class="log" id="log">
+まだ何も実行されていません。
+  </div>
+
+  <script>
+    function runMock() {
+      const log = document.getElementById("log");
+      log.textContent =
+        "✔ コードを受け取りました。\n" +
+        "（次のステップで Python と接続します）\n\n" +
+        "今はUIの土台ができた段階です。";
+    }
+  </script>
+</body>
+</html>
